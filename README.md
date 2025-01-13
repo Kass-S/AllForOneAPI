@@ -14,4 +14,5 @@ This will include the following from prior mini challenges
 9. Guess It
 10. Restaurant Picker
 
-Reviewed By:
+Reviewed By: Charles Orr
+everythings works great, I recommend trying to use a model on restaurant picker, instead of id and name like we have been doing you could try 'Type' for your type of restaurant and then 'Restaurant' as an array, aside from that great work, keep it up :)
