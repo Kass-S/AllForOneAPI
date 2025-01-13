@@ -19,7 +19,8 @@ namespace AllForOneAPI.Services
             if(validNum1 == false)
             {
                 return "Please enter a valid number.";
-            } else{
+            } else
+            {
                 return $"{convertedNum1} added to {convertedNum2} equals {convertedNum1 + convertedNum2}.";
             }
             

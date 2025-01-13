@@ -13,6 +13,7 @@ builder.Services.AddScoped<SayHelloServices>();
 builder.Services.AddScoped<Add2NumServices>();
 builder.Services.AddScoped<AskingQuestionsServices>();
 builder.Services.AddScoped<MadLibServices>();
+builder.Services.AddScoped<OddEvenServices>();
 
 var app = builder.Build();
 
