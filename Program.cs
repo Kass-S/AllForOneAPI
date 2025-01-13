@@ -10,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<SayHelloServices>();
+builder.Services.AddScoped<Add2NumServices>();
 
 var app = builder.Build();
 
