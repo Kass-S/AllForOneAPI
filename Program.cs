@@ -11,6 +11,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<SayHelloServices>();
 builder.Services.AddScoped<Add2NumServices>();
+builder.Services.AddScoped<AskingQuestionsServices>();
+builder.Services.AddScoped<MadLibServices>();
 
 var app = builder.Build();
 
