@@ -18,7 +18,7 @@ namespace AllForOneAPI.Controllers
 
         [HttpGet]
         [Route("Add/{num1}/{num2}")]
-        public string Add(int num1, int num2)
+        public string Add(string num1, string num2)
         {
             return _add2NumServices.Add(num1, num2);
         }
