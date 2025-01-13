@@ -1,0 +1,6 @@
+@AllForOneAPI_HostAddress = http://localhost:5042
+
+GET {{AllForOneAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
