@@ -15,6 +15,8 @@ builder.Services.AddScoped<AskingQuestionsServices>();
 builder.Services.AddScoped<MadLibServices>();
 builder.Services.AddScoped<OddEvenServices>();
 builder.Services.AddScoped<StringReverseServices>();
+builder.Services.AddScoped<NumberReverseServices>();
+
 
 var app = builder.Build();
 
