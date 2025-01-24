@@ -21,6 +21,15 @@ builder.Services.AddScoped<GuessItServices>();
 builder.Services.AddScoped<RestaurantPickerServices>();
 builder.Services.AddScoped<GreaterLessServices>();
 
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowAll", 
+    policy => {
+        policy.AllowAnyOrigin() 
+              .AllowAnyMethod() 
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -31,6 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
