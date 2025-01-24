@@ -18,7 +18,7 @@ namespace AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Magic8")]
+        [Route("Magic8/{question}")]
 
         public string EightBall(string question){
             return _magic8BallServices.EightBall(question);
